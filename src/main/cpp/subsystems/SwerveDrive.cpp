@@ -44,9 +44,6 @@ SwerveDrive::SwerveDrive() {
     frc::Translation2d m_rightLocation{(units::meter_t)-0.5*robotWidth, (units::meter_t)-0.5*robotHeight};
     frc::Translation2d m_leftLocation{(units::meter_t)0.5*robotWidth, (units::meter_t)-0.5*robotHeight};
     frc::Translation2d m_pointLocation{0.0_m, (units::meter_t)0.5*robotHeight};
-    // frc::Translation2d m_rightLocation{0.0_m, 0.0_m};
-    // frc::Translation2d m_leftLocation{0.0_m, 0.0_m};
-    // frc::Translation2d m_pointLocation{0.0_m, 0.0_m};
 
     // 3 pod swerve kinematics object using module locations
     m_kinematics = new SwerveDriveKinematics<3>{
